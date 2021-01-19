@@ -1,0 +1,39 @@
+<div fxLayout="column">
+    <div fxFlex="100" class="full">
+        <div class="ayudalogo">
+            <h1 class="ayuda">¿Necesitas ayuda?</h1>
+        </div>
+    </div>
+    <div fxFlex="100" class="flexCenter">
+        <div fxFlex="100" fxLayout="column">
+            <div class="image"></div>
+            <div ngClass.lt-md="panel-responsive" ngClass.gt-sm="panel">
+                <div fxFlex="100" class="flexCenter">
+                    <div fxFlex="100" fxLayout="column" style="padding: 1em;">
+                        <div class="flexCenter">
+                            <div class="escudo"></div>
+                        </div>
+                        <h1 class="ingresoseguro" style="width: 100%;">INGRESO SEGURO</h1>
+                        <h1 class="texto" style="width: 100%;">Un código de verificacion fue enviado a tu correo,
+                            porfavor introdúcelo.</h1>
+                        <mat-form-field class="example-full-width " style="width: 100%;">
+                            <input matInput placeholder="Ingresa tu código de verificación">
+                        </mat-form-field>
+                        <div class="flexCenter">
+                            <div class="entrar flexCenter" (click)="redireccion()">
+                                <p class="entrartext ">
+                                    ENTRAR
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <h1 class="vincular">¿Quieres vincular tu empresa a Coink?</h1>
+        </div>
+    </div>
+
+</div>

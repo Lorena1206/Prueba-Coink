@@ -1,0 +1,43 @@
+<div fxLayout="column">
+    <div fxFlex="100" class="full">
+        <div class="ayudalogo">
+            <h1 class="ayuda">¿Necesitas ayuda?</h1>
+        </div>
+    </div>
+    <div fxFlex="100" class="flexCenter">
+        <div fxFlex="100" fxLayout="column">
+            <div class="image"></div>
+            <div ngClass.lt-md="panel-responsive" ngClass.gt-sm="panel">
+                <div fxFlex="100" fxLayout="column" style="padding: 1em;">
+                    <h1 class="ingreso">INGRESA A TU CUENTA</h1>
+                    <form [formGroup]="LoginForm">
+
+                        <mat-form-field class="example-full-width " style="width: 100%;">
+                            <input matInput placeholder="Usuario" formControlName="nombre" required autocomplete="off">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width " style="width: 100%;">
+                            <input matInput type="password" placeholder="Contraseña" formControlName="contrasena"
+                                required>
+                        </mat-form-field>
+
+                        <div type="submit" class="ingresoboton" (click)="loginFuncion()" style="cursor: pointer;">
+                            <p class="ingresobotontext">
+                                INGRESAR
+                            </p>
+                        </div>
+
+                    </form>
+                    <h1 class="pin">Olvidé mi PIN</h1>
+                    <h1 class="numeroempresarial">Olvide mi número de celular empresarial</h1>
+
+
+
+                </div>
+            </div>
+            <h1 class="vincular">¿Quieres vincular tu empresa a Coink?</h1>
+
+        </div>
+    </div>
+
+</div>
